@@ -13,7 +13,24 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('art', function () {
+  $art = DB::select('SELECT * FROM art ORDER BY id ASC');
+  return $art;
+})
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::post('art', function (Request $request) {
+//   DB::insert('INSERT INTO art (artist, title, location, image) VALUES (?, ?, ?, ?)', [$request->artist, $request->title, $request->location, $request->image]);
+//   $art = DB::select('SELECT * FROM art ORDER BY id ASC');
+//   return $art;
+// })
+
+// Route::delete('art/{id}', function ($id) {
+//   DB::delete('DELETE FROM art WHERE id = ?', [$id]);
+//   $art = DB::select('SELECT * FROM art ORDER BY id ASC');
+//   return $art;
+// })
+
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+?>

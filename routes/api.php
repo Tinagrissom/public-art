@@ -32,6 +32,7 @@ Route::post('art', function (Request $request) {
 Route::put('art/{id}', function (Request $request, $id) {
   DB::update('UPDATE art SET artist=?, title=?, location=?, image=? WHERE id = ?', [$request->artist, $request->title, $request->location, $request->image, $id]);
   $art = DB::select('SELECT * FROM art ORDER BY id ASC');
+  return $art;
 });
 
 Route::delete('art/{id}', function ($id) {

@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::get('/', function () {
-  return File::get(public_path().'/index.html');
-});
+// Route::get('/', function () {
+//   return File::get(public_path().'/index.html');
+// });
 
 
 Route::get('art', function () {
@@ -34,11 +34,11 @@ Route::put('art/{id}', function (Request $request, $id) {
   $art = DB::select('SELECT * FROM art ORDER BY id ASC');
 });
 
-// Route::delete('art/{id}', function ($id) {
-//   DB::delete('DELETE FROM art WHERE id = ?', [$id]);
-//   $art = DB::select('SELECT * FROM art ORDER BY id ASC');
-//   return $art;
-// })
+Route::delete('art/{id}', function ($id) {
+  DB::delete('DELETE FROM art WHERE id = ?', [$id]);
+  $art = DB::select('SELECT * FROM art ORDER BY id ASC');
+  return $art;
+});
 
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();

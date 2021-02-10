@@ -13,10 +13,6 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::get('/', function () {
-  return File::get(public_path().'/index.html');
-});
-
 
 Route::get('art', function () {
   $art = DB::select('SELECT * FROM art ORDER BY id ASC');

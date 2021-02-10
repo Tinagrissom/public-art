@@ -1,0 +1,49 @@
+
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card {
+  width: 500px;
+  margin: 10px;
+  padding: 10px;
+  line-height: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+#modal {
+  background-color: #000000B0;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#modal-text {
+  background-color: white;
+  border: 8px solid gold;
+  height: auto;
+  width: 80%;
+  margin: 150px auto;
+  padding: 2%;
+}

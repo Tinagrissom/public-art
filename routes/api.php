@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('art', function () {
   $art = DB::select('SELECT * FROM art ORDER BY id ASC');
   return $art;

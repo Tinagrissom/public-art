@@ -9,6 +9,13 @@ class App extends React.Component {
     art: []
   }
 
+  refresh = () => {
+    event.preventDefault()
+    this.setState({
+      input: 'Texas'
+    })
+  }
+
   componentDidMount = () => {
     axios.get('api/art').then(
       (response) => {
@@ -112,11 +119,19 @@ class App extends React.Component {
             </div>
           </div>
         : '' }
-        <h1>Public Art Around {this.state.input}</h1>
+        <div className="header">
+        <h1>Public ART in  <select name="locations" id="input" onChange={this.handleInput}>
+                <option value="Texas">Texas</option>
+                <option value="Dallas">Dallas</option>
+                <option value="Fort Worth">Fort Worth</option>
+                <option value="Houston">Houston</option>
+                <option value="San Antonio">San Antonio</option>
 
-        <form onSubmit={this.handleSearch} id="narrow">
-            <input type="text" id="input" onChange={this.handleInput}/>
-        </form>
+              </select>
+
+        </h1>
+        </div>
+
         <ul>
           <div className="row">
         {

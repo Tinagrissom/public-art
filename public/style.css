@@ -1,17 +1,35 @@
 body {
   background-image: url("https://cdn.shopify.com/s/files/1/0653/6595/products/codovatrade.png?v=1584748230");
+  /* background-image: url("https://images-na.ssl-images-amazon.com/images/I/A1WoLUESVRL._AC_SL1500_.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Source Code Pro', monospace;
   font-weight: lighter;
-
+  background-attachment: fixed;
 }
 
 h1, h2 {
   font-family: 'Source Code Pro', monospace;
   font-weight: lighter;
   text-align: center;
+}
+select {
+  line-height: 30px;
+  font-family: 'Source Code Pro', monospace;
+  border: 0;
+  font-size: 1em;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+   text-overflow: '';
+   width: auto;
+   background-color: transparent;
+}
+.header{
+  background-color: rgba(136, 182, 247, 0.5);
+  width: auto;
+  padding: 30px;
 }
 
 .row{
@@ -58,7 +76,6 @@ img {
 
 #narrow{
   text-align: center;
-
 }
 #narrow>input{
   line-height: 30px;

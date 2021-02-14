@@ -120,16 +120,18 @@ class App extends React.Component {
           </div>
         : '' }
         <div className="header">
-        <h1>Public ART in  <select name="locations" id="input" onChange={this.handleInput}>
+        <h1>Public <span>ART</span> in <span>{this.state.input}</span> </h1>
+        <div id="narrow">
+        <p>Filter your search by City: </p>
+        <select name="locations" id="input" onChange={this.handleInput}>
+                <option>Select a City</option>
                 <option value="Texas">Texas</option>
                 <option value="Dallas">Dallas</option>
                 <option value="Fort Worth">Fort Worth</option>
                 <option value="Houston">Houston</option>
                 <option value="San Antonio">San Antonio</option>
-
               </select>
-
-        </h1>
+              </div>
         </div>
 
         <ul>

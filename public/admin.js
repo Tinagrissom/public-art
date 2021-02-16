@@ -29,11 +29,11 @@ class App extends React.Component {
       })
   }
 
-  showModal = (event) => {
+  showModal = () => {
     event.preventDefault()
     this.setState({
       show: !this.state.show
-      })
+    })
   }
 
   closeModal = () => {
@@ -99,6 +99,26 @@ class App extends React.Component {
 
   render = () => {
     return <div>
+      <button type="button" id="open" onClick={this.showModal}>Add Works</button>
+      {this.state.show === true ?
+        <div id="modal">
+          <div id="modal-text">
+              <h2>Add to the Public Art List</h2>
+              <form onSubmit={this.addArt} id="modal-form">
+                  <input type="text" id="artist" placeholder="Artist" onChange={this.handleChanges}/>
+                  <br />
+                  <input type="text" id="title" placeholder="Title" onChange={this.handleChanges}/>
+                  <br />
+                  <input type="text" id="location" placeholder="Location" onChange={this.handleChanges}/>
+                  <br />
+                  <input type="text" id="image" placeholder="Image URL" onChange={this.handleChanges}/>
+                  <br />
+                  <input type="submit" value="ADD" />
+              </form>
+              <button type="button" id="close" onClick={this.closeModal}>X</button>
+            </div>
+          </div>
+        : '' }
         <div className="header">
         <h1>Public <span>ART</span> in <span>{this.state.input}</span> </h1>
         <div id="narrow">
@@ -115,17 +135,6 @@ class App extends React.Component {
               <button onClick={this.refresh}>Back to all Art</button>
               </form>
         </div>
-        {this.state.show === true ?
-          <div id="modal">
-            <div id="modal-img">
-              {this.state.art.map((art) => {
-                  <img src={art.image}/>
-                })
-              }
-                <button type="button" id="close" onClick={this.closeModal}>X</button>
-              </div>
-            </div>
-          : '' }
 
         <ul>
           <div className="row">
@@ -139,6 +148,21 @@ class App extends React.Component {
                               <br />
                               <img src={art.image}/>
                               {art.location}<br />
+                              <button value={art.id} onClick={this.deleteArt}>Remove</button>
+                              <details>
+                                  <summary>Edit</summary>
+                                  <form id={art.id} onSubmit={this.updateArt}>
+                                      <input type="text" id="artist" placeholder="Artist" onChange={this.handleChanges}/>
+                                      <br />
+                                      <input type="text" id="title" placeholder="Title" onChange={this.handleChanges}/>
+                                      <br />
+                                      <input type="text" id="location" placeholder="Location" onChange={this.handleChanges}/>
+                                      <br />
+                                      <input type="text" id="image" placeholder="Image URL" onChange={this.handleChanges}/>
+                                      <br />
+                                      <input type="submit" value="Update" />
+                                  </form>
+                              </details>
                           </li>
                     </div>
                   } else if (this.state.input == 'Texas') {
@@ -147,6 +171,21 @@ class App extends React.Component {
                                 {art.artist}: {art.title}<br />
                                 <img src={art.image}/>
                                 {art.location}<br />
+                                <button value={art.id} onClick={this.deleteArt}>Remove</button>
+                                <details>
+                                    <summary>Edit</summary>
+                                    <form id={art.id} onSubmit={this.updateArt}>
+                                        <input type="text" id="artist" placeholder="Artist" onChange={this.handleChanges}/>
+                                        <br />
+                                        <input type="text" id="title" placeholder="Title" onChange={this.handleChanges}/>
+                                        <br />
+                                        <input type="text" id="location" placeholder="Location" onChange={this.handleChanges}/>
+                                        <br />
+                                        <input type="text" id="image" placeholder="Image URL" onChange={this.handleChanges}/>
+                                        <br />
+                                        <input type="submit" value="Update" />
+                                    </form>
+                                </details>
                             </li>
                       </div>
                   }

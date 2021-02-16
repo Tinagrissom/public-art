@@ -21,6 +21,11 @@ Route::get('art', function () {
   return $art;
 });
 
+Route::get('art/{id}', function () {
+  $art = DB::select('SELECT * FROM art ORDER BY id ASC');
+  return $art;
+});
+
 Route::post('art', function (Request $request) {
   DB::insert('INSERT INTO art (artist, title, location, image) VALUES (?, ?, ?, ?)', [$request->artist, $request->title, $request->location, $request->image]);
   $art = DB::select('SELECT * FROM art ORDER BY id ASC');
@@ -34,6 +39,29 @@ Route::put('art/{id}', function (Request $request, $id) {
 });
 
 Route::delete('art/{id}', function ($id) {
+  DB::delete('DELETE FROM art WHERE id = ?', [$id]);
+  $art = DB::select('SELECT * FROM art ORDER BY id ASC');
+  return $art;
+});
+
+Route::get('/art', function () {
+  $art = DB::select('SELECT * FROM art ORDER BY id ASC');
+  return $art;
+});
+
+Route::post('/art', function (Request $request) {
+  DB::insert('INSERT INTO art (artist, title, location, image) VALUES (?, ?, ?, ?)', [$request->artist, $request->title, $request->location, $request->image]);
+  $art = DB::select('SELECT * FROM art ORDER BY id ASC');
+  return $art;
+});
+
+Route::put('/art/{id}', function (Request $request, $id) {
+  DB::update('UPDATE art SET artist=?, title=?, location=?, image=? WHERE id = ?', [$request->artist, $request->title, $request->location, $request->image, $id]);
+  $art = DB::select('SELECT * FROM art ORDER BY id ASC');
+  return $art;
+});
+
+Route::delete('/art/{id}', function ($id) {
   DB::delete('DELETE FROM art WHERE id = ?', [$id]);
   $art = DB::select('SELECT * FROM art ORDER BY id ASC');
   return $art;

@@ -20,4 +20,8 @@ Route::get('/', function () {
   return File::get(public_path().'/index.html');
 });
 
+Route::get('/admin', function () {
+  return File::get(public_path().'/admin.html');
+});
+
 ?>

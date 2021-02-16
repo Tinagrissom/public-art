@@ -30,6 +30,14 @@ span {
   color: #E07D7A;
   text-transform: uppercase;
 }
+h2{
+  color: white;
+  text-align: center;
+  background-color:
+  rgba(225, 211, 209, 0.9);
+  padding: 20px;
+  font-weight: lighter;
+}
 select {
   line-height: 30px;
   font-family: 'Source Code Pro', monospace;
@@ -89,7 +97,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: #0053ba;
+  background: #AFB6A6;
   cursor: pointer;
 }
 
@@ -141,6 +149,13 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 5px solid white;
+  height: auto;
+  width: 60%;
+  margin: 150px auto;
+  padding: 2%;
+}
+#modal-img {
   border: 3px solid grey;
   height: auto;
   width: 60%;

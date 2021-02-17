@@ -21,9 +21,9 @@ Admin can edit and delete all entries using the "Remove" button, and by clicking
 
 
 ## Wins/Struggles and if I had more time
-- W - Tackling a new language for the backend - PHP but there's still more to learn!
-- L - I struggled getting a certain feature to work. I wanted to make the photos clickable so the user could view full-screen - but could not get this working!
-- W - finguring out how to add the secret admin route and functionality
+- Tackling a new language for the backend - PHP but there's still more to learn!
+- I struggled getting a certain feature to work. I wanted to make the photos clickable so the user could view full-screen - but could not get this working.
+- Finguring out how to add the secret admin route and functionality was a big win.
 
 - If I had more time, AND POWER!, I would have added a link to each art list that would take the user to a separate google page with directions to the site of the art.
 - I would have finished my mobile styling.

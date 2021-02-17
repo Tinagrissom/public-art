@@ -3,7 +3,7 @@
 
 A full-stack Laravel React CRUD application with PHP backend and PostgreSQL database. 
 
-Delpoyed online with Heroku: https://arcane-sands-92919.herokuapp.com/
+Delpoyed online with Heroku: https://arcane-sands-92919.herokuapp.com/  
 Developed with GitHub: https://github.com/Tinagrissom/public-art/
 
 On load the user will view the name Public Art in Texas, with main functionality options below the title. An option to narrow the search of public art by selecting a city from a drop down menu. Each choice selected will load only the public art of that city. This was created with the manipulation of states in React, if the users input matches the state.location - the data will be displayed on the page. If this does not match, it will not load.  A "back to all art" button is visible and when clicked will esentially refresh the page view to include all art in Texas once again. 

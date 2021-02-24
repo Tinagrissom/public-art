@@ -125,8 +125,11 @@ class App extends React.Component {
         <p>Filter your search by City: </p>
         <select name="locations" id="input" onChange={this.handleInput}>
                 <option>Select a City</option>
+                <option value="Austin">Austin</option>
                 <option value="Dallas">Dallas</option>
+                <option value="Denton">Denton</option>
                 <option value="Fort Worth">Fort Worth</option>
+                <option value="Galveston">Galveston</option>
                 <option value="Houston">Houston</option>
                 <option value="San Antonio">San Antonio</option>
               </select>

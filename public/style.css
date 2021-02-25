@@ -196,14 +196,14 @@ button:hover {
     width: 100%;
   }
   select{
-    width: 220px;
-    text-align-last: center;
+    width: 230px;
+    text-indent: 29px;
     text-align: center;
     -ms-text-align-last: center;
     -moz-text-align-last: center;
     padding: 5px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 22px;
   }
   button{
     margin-top: 20px;

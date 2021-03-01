@@ -59,6 +59,11 @@ select:hover {
 p{
   letter-spacing: 4px;
 }
+#name{
+  font-size: 1.5em;
+  color: black;
+  text-transform: none;
+}
 .header{
   display: flex;
   flex-direction: column;
@@ -84,7 +89,7 @@ p{
   background-color: white;
   width: 500px;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   line-height: 30px;
 }
 
@@ -194,6 +199,8 @@ button:hover {
   }
   .card {
     width: 100%;
+    padding: 5px;
+    text-align: center;
   }
   select{
     width: 230px;

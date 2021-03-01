@@ -138,18 +138,18 @@ class App extends React.Component {
               if(art.location == this.state.input ) {
                   return <div className="card">
                           <li>
-                              {art.artist}: {art.title}
-                              <br />
+
                               <img src={art.image}/>
-                              {art.location}<br />
+                              <span id="name">{art.artist}</span>
+                              <br />                    "{art.title}" | {art.location}<br />
                           </li>
                     </div>
                   } else if (this.state.input == 'Texas') {
                     return <div className="card">
                             <li>
-                                {art.artist}: {art.title}<br />
                                 <img src={art.image}/>
-                                {art.location}<br />
+                                <span id="name">{art.artist}</span>
+                                <br />                    "{art.title}" | {art.location}<br />
                             </li>
                       </div>
                   }

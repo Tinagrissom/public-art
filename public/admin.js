@@ -26,7 +26,7 @@ class App extends React.Component {
           title: '',
           location: '',
           image: '',
-          address: ''
+          address: '',
         })
       })
   }
@@ -54,7 +54,7 @@ class App extends React.Component {
         title: '',
         location: '',
         image: '',
-        address: ''
+        address: '',
       })
     })
   }
@@ -97,7 +97,7 @@ class App extends React.Component {
   addArt = (event) => {
     event.preventDefault()
     axios.post('/api/art', this.state).then((response) => {
-      this.setState({ art: response.data, artist: '', title: '', location: '', image: '', address: '' })
+      this.setState({ art: response.data, artist: '', title: '', location: '', image: '', address: '', })
     })
   }
 

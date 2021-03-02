@@ -150,7 +150,7 @@ class App extends React.Component {
                               <span id="name">{art.artist}</span>
                               <br />
                               "{art.title}" | {art.location}<br />
-                              <button id="directions"><a href={'http://maps.google.com/?q=' + art.address} target="_blank">Directions {art.address}</a></button>
+                              <button id="directions"><a href={'http://maps.google.com/?q=' + art.address} target="_blank">Directions</a></button>
                           </li>
                     </div>
                   } else if (this.state.input == 'Texas') {
@@ -160,7 +160,7 @@ class App extends React.Component {
                                 <span id="name">{art.artist}</span>
                                 <br />
                                 "{art.title}" | {art.location}<br />
-                                <button id="directions"><a href={'http://maps.google.com/?q=' + art.address} target="_blank">Directions {art.address}</a></button>
+                                <button id="directions"><a href={'http://maps.google.com/?q=' + art.address} target="_blank">Directions</a></button>
                             </li>
                       </div>
                   }

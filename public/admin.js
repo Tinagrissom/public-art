@@ -4,6 +4,7 @@ class App extends React.Component {
     title: '',
     location: '',
     image: '',
+    address: '',
     input: 'Texas',
     show: false,
     art: []
@@ -25,6 +26,7 @@ class App extends React.Component {
           title: '',
           location: '',
           image: '',
+          address: ''
         })
       })
   }
@@ -52,6 +54,7 @@ class App extends React.Component {
         title: '',
         location: '',
         image: '',
+        address: ''
       })
     })
   }
@@ -80,6 +83,7 @@ class App extends React.Component {
         title: '',
         location: '',
         image: '',
+        address: '',
       })
     })
   }
@@ -93,7 +97,7 @@ class App extends React.Component {
   addArt = (event) => {
     event.preventDefault()
     axios.post('/api/art', this.state).then((response) => {
-      this.setState({ art: response.data, artist: '', title: '', location: '', image: '' })
+      this.setState({ art: response.data, artist: '', title: '', location: '', image: '', address: '' })
     })
   }
 
@@ -112,6 +116,8 @@ class App extends React.Component {
                   <input type="text" id="location" placeholder="Location" onChange={this.handleChanges}/>
                   <br />
                   <input type="text" id="image" placeholder="Image URL" onChange={this.handleChanges}/>
+                  <br />
+                  <input type="text" id="address" placeholder="Address" onChange={this.handleChanges}/>
                   <br />
                   <input type="submit" value="ADD" />
               </form>
@@ -163,6 +169,7 @@ class App extends React.Component {
                                       <br />
                                       <input type="text" id="image" placeholder="Image URL" onChange={this.handleChanges}/>
                                       <br />
+                                      <input type="text" id="address" placeholder="Address" onChange={this.handleChanges}/>
                                       <input type="submit" value="Update" />
                                   </form>
                               </details>
@@ -185,6 +192,8 @@ class App extends React.Component {
                                         <input type="text" id="location" placeholder="Location" onChange={this.handleChanges}/>
                                         <br />
                                         <input type="text" id="image" placeholder="Image URL" onChange={this.handleChanges}/>
+                                        <br />
+                                        <input type="text" id="address" placeholder="Address" onChange={this.handleChanges}/>
                                         <br />
                                         <input type="submit" value="Update" />
                                     </form>

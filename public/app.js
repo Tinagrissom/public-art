@@ -4,6 +4,7 @@ class App extends React.Component {
     title: '',
     location: '',
     image: '',
+    address: '',
     input: 'Texas',
     show: false,
     art: []
@@ -25,6 +26,7 @@ class App extends React.Component {
           title: '',
           location: '',
           image: '',
+          address: '',
         })
       })
   }
@@ -145,6 +147,7 @@ class App extends React.Component {
                               <img src={art.image}/>
                               <span id="name">{art.artist}</span>
                               <br />                    "{art.title}" | {art.location}<br />
+                              <button id="directions"><a href={'http://maps.google.com/?q=' + art.address}>Directions</a></button>
                           </li>
                     </div>
                   } else if (this.state.input == 'Texas') {

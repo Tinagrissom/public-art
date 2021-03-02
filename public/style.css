@@ -131,6 +131,15 @@ button:hover {
   cursor: pointer;
 }
 
+#directions{
+  background-color: transparent;
+  border: 1px solid black;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
 #modal-form {
   text-align: center;
 }

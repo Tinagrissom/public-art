@@ -134,10 +134,21 @@ button:hover {
 #directions{
   background-color: transparent;
   border: 1px solid black;
+  color: black;
+}
+#directions:hover{
+  background: #9DAEBE;
+  color: white;
+  cursor: pointer;
 }
 a{
   text-decoration: none;
   color: black;
+}
+a:hover{
+  background: transparent;
+  color: white;
+  cursor: pointer;
 }
 
 #modal-form {

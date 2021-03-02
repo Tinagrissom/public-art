@@ -54,6 +54,7 @@ class App extends React.Component {
         title: '',
         location: '',
         image: '',
+        address: '',
       })
     })
   }
@@ -82,6 +83,7 @@ class App extends React.Component {
         title: '',
         location: '',
         image: '',
+        address: '',
       })
     })
   }
@@ -95,7 +97,7 @@ class App extends React.Component {
   addArt = (event) => {
     event.preventDefault()
     axios.post('/api/art', this.state).then((response) => {
-      this.setState({ art: response.data, artist: '', title: '', location: '', image: '' })
+      this.setState({ art: response.data, artist: '', title: '', location: '', image: '', address: '', })
     })
   }
 
@@ -146,8 +148,9 @@ class App extends React.Component {
 
                               <img src={art.image}/>
                               <span id="name">{art.artist}</span>
-                              <br />                    "{art.title}" | {art.location}<br />
-                              <button id="directions"><a href={'http://maps.google.com/?q=' + art.address}>Directions</a></button>
+                              <br />
+                              "{art.title}" | {art.location}<br />
+                              <button id="directions"><a href={'http://maps.google.com/?q=' + art.address} target="_blank">Directions</a></button>
                           </li>
                     </div>
                   } else if (this.state.input == 'Texas') {
@@ -155,7 +158,9 @@ class App extends React.Component {
                             <li>
                                 <img src={art.image}/>
                                 <span id="name">{art.artist}</span>
-                                <br />                    "{art.title}" | {art.location}<br />
+                                <br />
+                                "{art.title}" | {art.location}<br />
+                                <button id="directions"><a href={'http://maps.google.com/?q=' + art.address} target="_blank">Directions</a></button>
                             </li>
                       </div>
                   }

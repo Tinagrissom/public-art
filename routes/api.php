@@ -27,13 +27,13 @@ Route::get('art/{id}', function () {
 });
 
 Route::post('art', function (Request $request) {
-  DB::insert('INSERT INTO art (artist, title, location, image) VALUES (?, ?, ?, ?)', [$request->artist, $request->title, $request->location, $request->image]);
+  DB::insert('INSERT INTO art (artist, title, location, image, address) VALUES (?, ?, ?, ?, ?)', [$request->artist, $request->title, $request->location, $request->image, $request->address]);
   $art = DB::select('SELECT * FROM art ORDER BY id ASC');
   return $art;
 });
 
 Route::put('art/{id}', function (Request $request, $id) {
-  DB::update('UPDATE art SET artist=?, title=?, location=?, image=? WHERE id = ?', [$request->artist, $request->title, $request->location, $request->image, $id]);
+  DB::update('UPDATE art SET artist=?, title=?, location=?, image=?, address=? WHERE id = ?', [$request->artist, $request->title, $request->location, $request->image, $request->address, $id]);
   $art = DB::select('SELECT * FROM art ORDER BY id ASC');
   return $art;
 });
@@ -50,13 +50,13 @@ Route::get('/art', function () {
 });
 
 Route::post('/art', function (Request $request) {
-  DB::insert('INSERT INTO art (artist, title, location, image) VALUES (?, ?, ?, ?)', [$request->artist, $request->title, $request->location, $request->image]);
+  DB::insert('INSERT INTO art (artist, title, location, image, address) VALUES (?, ?, ?, ?, ?)', [$request->artist, $request->title, $request->location, $request->image, $request->address]);
   $art = DB::select('SELECT * FROM art ORDER BY id ASC');
   return $art;
 });
 
 Route::put('/art/{id}', function (Request $request, $id) {
-  DB::update('UPDATE art SET artist=?, title=?, location=?, image=? WHERE id = ?', [$request->artist, $request->title, $request->location, $request->image, $id]);
+  DB::update('UPDATE art SET artist=?, title=?, location=?, image=?, address=? WHERE id = ?', [$request->artist, $request->title, $request->location, $request->image, $request->address, $id]);
   $art = DB::select('SELECT * FROM art ORDER BY id ASC');
   return $art;
 });

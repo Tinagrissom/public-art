@@ -108,12 +108,14 @@ class App extends React.Component {
               <div id="modal-text" className="hello">
                   <p>Hello,</p>
                   <br />
-                  <p>I do consider this an incomplete list of Public Art in Texas.
+                  <p>Today this is an incomplete list of Public Art in Texas.
                   If you have knowledge of a public works that is not included, I would love to hear from you!
                   I want to make this as comprehensive as possible, and I appreciate any and all suggestions. </p>
-                  <a href="mailto:tinagrissom@yahoo.com">Email me</a>
+
                   <h2>Thanks for visiting!</h2>
-                  <p>-Tina Marie</p>
+                  
+                  <a href="mailto:tinagrissom@yahoo.com">Email me</a>
+                  <br />
                   <button type="button" id="close" onClick={this.closeModal}>X</button>
                 </div>
               </div>

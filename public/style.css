@@ -161,7 +161,13 @@ a:hover{
 #modal-form {
   text-align: center;
 }
-
+#close{
+  cursor: pointer;
+  border: 0;
+  font-size: 25px;
+  right: 20px;
+  top: 10px;
+}
 
 #modal-form>input{
   padding: 8px;
@@ -182,9 +188,6 @@ a:hover{
 
 #modal-text {
   background-color: #DFD3D1;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   border: 5px solid white;
   height: auto;
   width: 60%;
@@ -257,11 +260,13 @@ a:hover{
     border: 5px solid white;
     height: auto;
     width: 90%;
-    margin: 0 auto;
+    margin: 150 auto;
     padding: 2%;
   }
   .hello {
     text-align: center;
+  }
+  .hello>p{
     font-size: 18px;
   }
   .hello>a{

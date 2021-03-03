@@ -106,6 +106,12 @@ li {
 img {
   width: 100%;
   height: 330px;
+  transition: transform .2s;
+  cursor: pointer;
+}
+img:active{
+  transform: scale(1.5);
+  z-index:999;
 }
 
 #narrow{
@@ -118,8 +124,9 @@ img {
 button {
   font-size: 1rem;
   font-family: inherit;
-  background-color: #AFB6A6;
-  border: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
   padding: 10px;
   margin: 5px;
   cursor: pointer;
@@ -174,7 +181,7 @@ a:hover{
 }
 
 #modal-text {
-  background-image: url("https://cdn.shopify.com/s/files/1/0653/6595/products/rand1.png?v=1528258819");
+  background-color: #DFD3D1;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,6 +197,13 @@ a:hover{
   width: 60%;
   margin: 150px auto;
   padding: 2%;
+}
+.hello {
+  text-align: center;
+}
+.hello>a{
+  font-size: 1.2em;
+  margin-top: 5px;
 }
 
 @media (max-width: 600px) {

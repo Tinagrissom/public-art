@@ -102,8 +102,25 @@ class App extends React.Component {
   }
 
   render = () => {
-    return <div className="main">
+    return <div>
+          {this.state.show === true ?
+            <div id="modal">
+              <div id="modal-text" className="hello">
+                  <p>Hello,</p>
+                  <br />
+                  <p>I do consider this an uncomplete list of Public Art in Texas.
+                  If you have knowledge of a public works that is not included, I would love to hear from you!
+                  I want to make this as comprehensive as possible, and I appreciate any and all suggestions. </p>
+                  <a href="mailto:tinagrissom@yahoo.com">Email me</a>
+                  <h2>Thanks for visiting!</h2>
+                  <p>-Tina Marie</p>
+                  <button type="button" id="close" onClick={this.closeModal}>X</button>
+                </div>
+              </div>
+            : '' }
+        <div className="main">
         <div className="header">
+        <button type="button" id="open" onClick={this.showModal}>Get in Touch</button>
         <h1>Public <span>ART</span> in <span>{this.state.input}</span> </h1>
         <div id="narrow">
         <p>Filter your search by City: </p>
@@ -125,17 +142,6 @@ class App extends React.Component {
               <button onClick={this.refresh}>Back to all Art</button>
               </form>
         </div>
-        {this.state.show === true ?
-          <div id="modal">
-            <div id="modal-img">
-              {this.state.art.map((art) => {
-                  <img src={art.image}/>
-                })
-              }
-                <button type="button" id="close" onClick={this.closeModal}>X</button>
-              </div>
-            </div>
-          : '' }
 
         <ul>
           <div className="row">
@@ -145,7 +151,6 @@ class App extends React.Component {
               if(art.location == this.state.input ) {
                   return <div className="card">
                           <li>
-
                               <img src={art.image}/>
                               <span id="name">{art.artist}</span>
                               <br />
@@ -167,6 +172,7 @@ class App extends React.Component {
               })}
             </div>
           </ul>
+        </div>
         </div>
   }
 }

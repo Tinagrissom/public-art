@@ -108,7 +108,7 @@ class App extends React.Component {
               <div id="modal-text" className="hello">
                   <p>Hello,</p>
                   <br />
-                  <p>I do consider this an uncomplete list of Public Art in Texas.
+                  <p>I do consider this an incomplete list of Public Art in Texas.
                   If you have knowledge of a public works that is not included, I would love to hear from you!
                   I want to make this as comprehensive as possible, and I appreciate any and all suggestions. </p>
                   <a href="mailto:tinagrissom@yahoo.com">Email me</a>

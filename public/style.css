@@ -249,5 +249,24 @@ a:hover{
   h1{
     font-size: 48px;
   }
+  #modal-text {
+    background-color: #DFD3D1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid white;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2%;
+  }
+  .hello {
+    text-align: center;
+    font-size: 18px;
+  }
+  .hello>a{
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
 
 }

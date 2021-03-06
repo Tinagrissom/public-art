@@ -187,8 +187,8 @@ a:hover{
 }
 
 #modal-text {
-  background-color: #DFD3D1;
-  border: 5px solid white;
+  background-color: white;
+  border: 18px solid #E07D7A;
   height: auto;
   width: 60%;
   margin: 150px auto;
@@ -203,11 +203,26 @@ a:hover{
 }
 .hello {
   text-align: center;
+  overflow: auto;
 }
 .hello>a{
   font-size: 1.2em;
   margin-top: 5px;
 }
+.hello>h2 {
+  background-color: white;
+  color: black;
+}
+.hello>button {
+  color: black;
+  float: right;
+  font-size: 10px;
+}
+.hello>button:hover {
+  background-color: transparent;
+}
+
+
 
 @media (max-width: 600px) {
   .main{

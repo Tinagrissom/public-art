@@ -106,14 +106,14 @@ class App extends React.Component {
           {this.state.show === true ?
             <div id="modal">
               <div id="modal-text" className="hello">
-                  <p>Hello,</p>
+                  <h2>Hello,</h2>
                   <br />
                   <p>Today this is an incomplete list of Public Art in Texas.
                   If you have knowledge of a public works that is not included, I would love to hear from you!
                   I want to make this as comprehensive as possible, and I appreciate any and all suggestions. </p>
 
                   <h2>Thanks for visiting!</h2>
-                  
+
                   <a href="mailto:tinagrissom@yahoo.com">Email me</a>
                   <br />
                   <button type="button" id="close" onClick={this.closeModal}>X</button>

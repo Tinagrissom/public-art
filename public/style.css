@@ -268,14 +268,13 @@ a:hover{
     font-size: 48px;
   }
   #modal-text {
-    background-color: #DFD3D1;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 5px solid white;
     height: auto;
-    width: 90%;
-    margin: 150 auto;
+    width: 80%;
+    margin: 100 auto;
+    border: 10px solid #E07D7A; 
     padding: 2%;
   }
   .hello {

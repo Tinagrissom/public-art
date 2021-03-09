@@ -3,14 +3,16 @@ body {
   flex-direction: column;
   align-items: center;
   background-image: url("https://cdn.shopify.com/s/files/1/0653/6595/products/codovatrade.png?v=1584748230");
-  /* background-image: url("https://images-na.ssl-images-amazon.com/images/I/A1WoLUESVRL._AC_SL1500_.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Source Code Pro', monospace;
-  /* font-weight: lighter; */
+  /* font-family: 'Source Code Pro', monospace; */
+  font-family: 'Mulish';
+  letter-spacing: 2px;
   background-attachment: fixed;
+
 }
+
 main{
   width: 100%
 }
@@ -26,11 +28,13 @@ h1 {
   font-weight: 800;
   color: white;
 }
+
 span {
   /* color: #FF908B; */
   color: #E07D7A;
   text-transform: uppercase;
 }
+
 h2{
   color: white;
   text-align: center;
@@ -39,10 +43,13 @@ h2{
   padding: 20px;
   font-weight: lighter;
 }
+
 select {
-  font-family: 'Source Code Pro', monospace;
+  /* font-family: 'Source Code Pro', monospace; */
+  font-family: 'Mulish';
   border: 0;
   font-size: 1em;
+  font-weight: bold;
   text-align-last: center;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -50,20 +57,24 @@ select {
    width: auto;
    background-color: transparent;
    padding: 5px;
-   letter-spacing: 4px;
+   letter-spacing: 2px;
    color: white;
 }
+
 select:hover {
     cursor: pointer;
 }
-p{
+
+/* p{
   letter-spacing: 4px;
-}
+} */
+
 #name{
   font-size: 1.5em;
   color: black;
   text-transform: none;
 }
+
 .header{
   display: flex;
   flex-direction: column;
@@ -89,7 +100,7 @@ p{
   background-color: white;
   width: 500px;
   margin: 10px;
-  padding: 10px;
+  padding: 4px;
   line-height: 30px;
 }
 
@@ -124,17 +135,18 @@ img:active{
 button {
   font-size: 1rem;
   font-family: inherit;
-  background-color: transparent;
-  border: 1px solid white;
+  background-color: #E07D7A;
+  border: 2px solid WHITE;
   color: white;
   padding: 10px;
   margin: 5px;
   cursor: pointer;
+  font-weight: bold;
   transition: background-color 0.5s ease;
 }
 
 button:hover {
-  background: #9DAEBE;
+  background: transparent;
   cursor: pointer;
 }
 
@@ -144,7 +156,7 @@ button:hover {
   color: black;
 }
 #directions:hover{
-  background: #9DAEBE;
+  background: #DFD3D1;
   color: white;
   cursor: pointer;
 }
@@ -153,8 +165,6 @@ a{
   color: black;
 }
 a:hover{
-  background: transparent;
-  color: white;
   cursor: pointer;
 }
 
@@ -163,6 +173,7 @@ a:hover{
 }
 #close{
   cursor: pointer;
+  background-color: transparent;
   border: 0;
   font-size: 25px;
   right: 20px;
@@ -188,10 +199,11 @@ a:hover{
 
 #modal-text {
   background-color: white;
+  font-family: 'Mulish';
   border: 18px solid #E07D7A;
   height: auto;
   width: 60%;
-  margin: 150px auto;
+  margin: 100px auto;
   padding: 2%;
 }
 #modal-img {
@@ -219,7 +231,7 @@ a:hover{
   font-size: 10px;
 }
 .hello>button:hover {
-  background-color: transparent;
+  background-color: #E07D7A;
 }
 
 
@@ -236,7 +248,7 @@ a:hover{
   }
   .card {
   width: 100%;
-  padding: 5px;
+  padding: 2px;
   text-align: center;
   }
   p {
@@ -272,10 +284,14 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
-    width: 80%;
-    margin: 100 auto;
-    border: 10px solid #E07D7A; 
+    width: 83%;
+    margin: 5;
+    border: 10px solid #E07D7A;
     padding: 2%;
+  }
+
+  #directions {
+    /* margin-top: 0.2; */
   }
   .hello {
     text-align: center;

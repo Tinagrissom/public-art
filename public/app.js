@@ -106,15 +106,19 @@ class App extends React.Component {
           {this.state.show === true ?
             <div id="modal">
               <div id="modal-text" className="hello">
-                  <h2>Hello,</h2>
-                  <br />
+
                   <p>Today this is an incomplete list of Public Art in Texas.
                   If you have knowledge of a public works that is not included, I would love to hear from you!
                   I want to make this as comprehensive as possible, and I appreciate any and all suggestions. </p>
-
+                  <br />
+                  <p>I hope this project inspires you to take a road trip, walk, or go a little out of the way to see something amazing.
+                  </p>
                   <h2>Thanks for visiting!</h2>
 
-                  <a href="mailto:tinagrissom@yahoo.com">Email me</a>
+
+                  <a href="mailto:tinagrissom@yahoo.com">Email me here</a><br />
+                  <p>or</p>
+                  <a href="https://www.linkedin.com/in/tinagrissom/">LinkedIn</a>
                   <br />
                   <button type="button" id="close" onClick={this.closeModal}>X</button>
                 </div>
@@ -122,7 +126,6 @@ class App extends React.Component {
             : '' }
         <div className="main">
         <div className="header">
-        <button type="button" id="open" onClick={this.showModal}>Get in Touch</button>
         <h1>Public <span>ART</span> in <span>{this.state.input}</span> </h1>
         <div id="narrow">
         <p>Filter your search by City: </p>
@@ -141,7 +144,8 @@ class App extends React.Component {
               </select>
               </div>
               <form onSubmit={this.handleSearch} id="narrow">
-              <button onClick={this.refresh}>Back to all Art</button>
+              <button onClick={this.refresh}>BACK TO ALL ART</button>
+              <button type="button" id="open" onClick={this.showModal}>SAY HELLO</button>
               </form>
         </div>
 

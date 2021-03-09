@@ -108,10 +108,10 @@ class App extends React.Component {
               <div id="modal-text" className="hello">
 
                   <p>Today this is an incomplete list of Public Art in Texas.
-                  If you have knowledge of a public works that is not included, I would love to hear from you!
+                  If you have knowledge of a work of public art that is not included, I would love to hear from you!
                   I want to make this as comprehensive as possible, and I appreciate any and all suggestions. </p>
                   <br />
-                  <p>I hope this project inspires you to take a road trip, walk, or go a little out of the way to see something amazing.
+                  <p>I hope this project inspires you to take a road trip or go a little out of the way to see something amazing.
                   </p>
                   <h2>Thanks for visiting!</h2>
 
@@ -158,20 +158,25 @@ class App extends React.Component {
                   return <div className="card">
                           <li>
                               <img src={art.image}/>
+                              <div className="card-info">
                               <span id="name">{art.artist}</span>
                               <br />
                               "{art.title}" | {art.location}<br />
                               <button id="directions"><a href={'http://maps.google.com/?q=' + art.address} target="_blank">Directions</a></button>
+                              </div>
                           </li>
                     </div>
                   } else if (this.state.input == 'Texas') {
                     return <div className="card">
                             <li>
                                 <img src={art.image}/>
+                                <div className="card-info">
                                 <span id="name">{art.artist}</span>
                                 <br />
                                 "{art.title}" | {art.location}<br />
-                                <button id="directions"><a href={'http://maps.google.com/?q=' + art.address} target="_blank">Directions</a></button>
+                                </div>
+                                <button id="directions"><a href={'http://maps.google.com/?q=' + art.address} target="_blank">DIRECTIONS</a></button>
+
                             </li>
                       </div>
                   }

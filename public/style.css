@@ -121,7 +121,7 @@ img {
   cursor: pointer;
 }
 img:active{
-  transform: scale(1.5);
+  transform: scale(2);
   z-index:999;
 }
 
@@ -143,11 +143,16 @@ button {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.5s ease;
+  float: right;
 }
 
 button:hover {
   background: transparent;
   cursor: pointer;
+}
+
+.card-info {
+  margin: 7px;
 }
 
 #directions{
@@ -247,9 +252,9 @@ a:hover{
     background-attachment: fixed;
   }
   .card {
-  width: 100%;
-  padding: 2px;
-  text-align: center;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
   }
   p {
     font-size: 28px;
@@ -291,7 +296,7 @@ a:hover{
   }
 
   #directions {
-    /* margin-top: 0.2; */
+    float: none;
   }
   .hello {
     text-align: center;

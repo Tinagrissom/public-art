@@ -6,7 +6,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* font-family: 'Source Code Pro', monospace; */
   font-family: 'Mulish';
   letter-spacing: 2px;
   background-attachment: fixed;
@@ -30,7 +29,6 @@ h1 {
 }
 
 span {
-  /* color: #FF908B; */
   color: #E07D7A;
   text-transform: uppercase;
 }
@@ -45,7 +43,6 @@ h2{
 }
 
 select {
-  /* font-family: 'Source Code Pro', monospace; */
   font-family: 'Mulish';
   border: 0;
   font-size: 1em;
@@ -64,10 +61,6 @@ select {
 select:hover {
     cursor: pointer;
 }
-
-/* p{
-  letter-spacing: 4px;
-} */
 
 #name{
   font-size: 1.5em;
@@ -120,6 +113,7 @@ img {
   transition: transform .2s;
   cursor: pointer;
 }
+
 img:active{
   transform: scale(2);
   z-index:999;
@@ -132,6 +126,7 @@ img:active{
   text-align: center;
   font-size: 1.4rem;
 }
+
 button {
   font-size: 1rem;
   font-family: inherit;
@@ -160,15 +155,18 @@ button:hover {
   border: 1px solid black;
   color: black;
 }
+
 #directions:hover{
   background: #DFD3D1;
   color: white;
   cursor: pointer;
 }
+
 a{
   text-decoration: none;
   color: black;
 }
+
 a:hover{
   cursor: pointer;
 }
@@ -176,6 +174,7 @@ a:hover{
 #modal-form {
   text-align: center;
 }
+
 #close{
   cursor: pointer;
   background-color: transparent;
@@ -218,23 +217,28 @@ a:hover{
   margin: 150px auto;
   padding: 2%;
 }
+
 .hello {
   text-align: center;
   overflow: auto;
 }
+
 .hello>a{
   font-size: 1.2em;
   margin-top: 5px;
 }
+
 .hello>h2 {
   background-color: white;
   color: black;
 }
+
 .hello>button {
   color: black;
   float: right;
   font-size: 10px;
 }
+
 .hello>button:hover {
   background-color: #E07D7A;
 }
@@ -248,26 +252,33 @@ a:hover{
     align-items: center;
     width: 100%;
   }
+
   body{
     background-attachment: fixed;
   }
+
   .card {
     width: 100%;
     padding: 2px;
     text-align: center;
   }
+
   p {
     font-size: 28px;
   }
+
   img{
     height: auto;
   }
+
   #narrow{
     flex-direction: column;
   }
+
   .row{
     width: 100%;
   }
+
   select{
     width: 230px;
     text-indent: 29px;
@@ -278,12 +289,15 @@ a:hover{
     margin: 0 auto;
     font-size: 22px;
   }
+
   button{
     margin-top: 20px;
   }
+
   h1{
     font-size: 48px;
   }
+
   #modal-text {
     background-position: center;
     background-repeat: no-repeat;
@@ -298,12 +312,15 @@ a:hover{
   #directions {
     float: none;
   }
+
   .hello {
     text-align: center;
   }
+
   .hello>p{
     font-size: 18px;
   }
+  
   .hello>a{
     font-size: 1.2em;
     margin-top: 5px;

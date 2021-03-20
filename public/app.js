@@ -116,7 +116,7 @@ class App extends React.Component {
                   <h2>Thanks for visiting!</h2>
 
 
-                  <a href="mailto:tinagrissom@yahoo.com">Email me here</a><br />
+                  <a href="mailto:tinagrissom@yahoo.com">Email Me</a><br />
                   <p>or</p>
                   <a href="https://www.linkedin.com/in/tinagrissom/">LinkedIn</a>
                   <br />
